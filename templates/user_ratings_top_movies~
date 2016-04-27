@@ -1,0 +1,10 @@
+<!doctype html>
+<title>Hello from Flask</title>
+
+  <p>用户编号:{{user_id}}</p>
+  <p>推荐给用户的电影:<p>
+  <ul class=entries>
+  {% for entry in ratings %}
+    <li>{{ entry }}</li>
+  {% endfor %}
+  </ul>
